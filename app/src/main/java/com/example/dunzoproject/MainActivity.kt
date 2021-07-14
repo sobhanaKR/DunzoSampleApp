@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         fragmentContainer = findViewById(R.id.container)
         val photosFragment = PhotosFragment()
-        val manager: FragmentManager = getSupportFragmentManager();
+        val manager: FragmentManager = getSupportFragmentManager()
         val transaction: FragmentTransaction = manager.beginTransaction()
         transaction.add(R.id.container, photosFragment, null)
         transaction.addToBackStack(null)
